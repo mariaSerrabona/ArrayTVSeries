@@ -11,16 +11,13 @@ for (let i=0; i<seriesPending.length; i++){
     console.log(seriesPending[i]);
 }
 
-let removedSerie=seriesPending.shift();
-seriesWatching.push(removedSerie);
+seriesWatching.push(seriesPending.shift());
 console.log(seriesPending.length);
 console.log(seriesWatching.length);
 
 for (let j=0; j===4;j++){
     seriesWatching.push(seriesPending.shift());
 }
-console.log(seriesPending.length);
-console.log(seriesWatching.length);
 
 
 seriesWatching.splice(0, seriesWatching.length);
